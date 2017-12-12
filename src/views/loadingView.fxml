@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoadingController">
+    <center>
+        <VBox>
+            <VBox>
+                <Label fx:id="generalLabel"/>
+                <ProgressBar fx:id="generalProgressBar"/>
+            </VBox>
+            <VBox>
+                <Label fx:id="detailsLabel"/>
+                <ProgressBar fx:id="detailsProgressBar"/>
+            </VBox>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox>
+            <Button fx:id="saveButton" text="Save"/>
+            <Button fx:id="nextButton" text="Next"/>
+        </HBox>
+    </bottom>
+</BorderPane>

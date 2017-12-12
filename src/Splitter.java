@@ -3,7 +3,6 @@
  *
  * @author nes-t
  */
-public class Splitter {
 
 import com.sun.istack.internal.NotNull;
 import com.sun.istack.internal.Nullable;
@@ -322,3 +321,4 @@ public abstract class Splitter
             this.root.setBackground(new Background(new BackgroundFill(color, null, null)));
     }
 
+}

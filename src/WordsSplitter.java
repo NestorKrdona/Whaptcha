@@ -4,8 +4,6 @@
  * @author nes-t
  */
 
-
-
 import com.sun.istack.internal.NotNull;
 import com.sun.istack.internal.Nullable;
 import javafx.scene.layout.Pane;
