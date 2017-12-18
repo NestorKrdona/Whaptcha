@@ -6,7 +6,7 @@ import javafx.scene.control.Slider;
 import javafx.scene.layout.BorderPane;
 
 /**
- * Created by sal on 15/11/15.
+ * Created by NestorKrdona 13/12/2017
  * CDSD stands for Choose DataSet Directory
  */
 public class CDSDController
@@ -24,8 +24,8 @@ public class CDSDController
     private void initialize()
     {
         // configure Button
-        cDSDButton.setText("Choose Directory");
-        trainButton.setText("Train");
+        cDSDButton.setText("Cargar Muestra");
+        trainButton.setText("Entrenar");
         // configure Slider
         ProcessController.configSlider(ratioSlider, 0d, 1d, 0.1d, 0.7d, true, true);
     }

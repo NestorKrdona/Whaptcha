@@ -16,14 +16,14 @@ import java.util.List;
 import java.util.logging.Level;
 
 /**
- * Created by sal on 14/11/15.
+ * Created by Nestor on 12/12/17.
  */
 public abstract class Splitter
 {
     @NotNull
-    private Mat img; // the matrice image to process
+    private Mat img; // la imagen matricial a procesar
     @NotNull
-    private int[] columnsHistogram = new int[0]; // the histograms
+    private int[] columnsHistogram = new int[0]; // Los Histogramas
     @NotNull
     private int[] rowsHistogram = new int[0];
 
@@ -34,8 +34,8 @@ public abstract class Splitter
     public double rowLimit = 0;
 
     /**
-     * A Splitter split an image pixel, in a given way.
-     * @param img img the image to process
+     * Un Splitter divide un píxel de imagen, de una manera determinada.
+     * @param img la imagen a procesar
      */
     public Splitter(@NotNull Mat img)
     {
@@ -43,14 +43,13 @@ public abstract class Splitter
     }
 
     /**
-     * A splitter split an image pixel, in a given way.
-     * If you want to debug, you can pass a pane
-     * in which all Images generated in debugs will be add.
-     * Initialize function will be call only if the matrice is
-     * a valid image.
-     * Debug function is called only if the Pane is not null.
-     * @param img the image to process
-     * @param root expected not null for debug process.
+     * Un divisor divide un píxel de imagen, de una manera determinada.
+     * Si desea depurar, puede pasar un panel en el que se agregarán 
+     * todas las imágenes generadas en los depuradores.
+     * La función Initialize se llamará solo si la matrice es una imagen válida.
+     * La función de depuración se llama solo si el Panel no es nulo.
+     * @param img la imagen a procesar
+     * @param root espera parametro no nulo para el proceso de depuración.
      */
     public Splitter(@NotNull Mat img, @Nullable Pane root)
     {
@@ -58,14 +57,13 @@ public abstract class Splitter
     }
 
     /**
-     * A splitter split an image pixel, in a given way.
-     * If you want to debug, you can pass a pane
-     * in which all Images generated in debugs will be add.
-     * Initialize function will be call only if the matrice is
-     * a valid image.
-     * Debug function is called only if the Pane is not null.
-     * @param img the image to process
-     * @param root expected not null for debug process.
+     * Un divisor divide un píxel de imagen, de una manera determinada.
+     * Si desea depurar, puede pasar un panel en el que se agregarán 
+     * todas las imágenes generadas en los depuradores. 
+     * La función Initialize se llamará solo si la matrice es una imagen válida. 
+     * La función de depuración se llama solo si el Panel no es nulo.
+     * @param img imagen a procesar
+     * @param root espera parametro no nulo para el proceso de depuración.
      */
     public Splitter(@NotNull Mat img, @Nullable Pane root, double colLimit, double rowLimit)
     {
@@ -93,8 +91,8 @@ public abstract class Splitter
     }
 
     /**
-     * This function aims to binarise the matrice image,
-     * if the image is not empty and not null.
+     * Esta función tiene como objetivo binarizar una imagen de matriz,
+     * 
      */
     private void binarise()
     {
@@ -102,8 +100,8 @@ public abstract class Splitter
     }
 
     /**
-     * Calculate the histograms of the matrice image.
-     * Both rows and columns
+     * Calcule los histogramas de la imagen de la matriz.
+     * Ambas filas y columnas
      */
     private void calculateHistograms()
     {
@@ -112,7 +110,7 @@ public abstract class Splitter
     }
 
     /**
-     * Calculate the row histogram of the matrice image.
+     * Calcule los histogramas de la imagen de la matriz.
      */
     private void calculateRowsHistogram()
     {
@@ -120,7 +118,7 @@ public abstract class Splitter
     }
 
     /**
-     * Calculate the columns histogram of the matrice image.
+     * Calcule los histogramas de la imagen de la matriz.
      */
     private void calculateColumnsHistogram()
     {

@@ -15,8 +15,8 @@ import java.util.logging.Level;
 import java.util.stream.Collectors;
 
 /**
- * Created by sal on 12/11/15.
- * Used to Split Lines from a paragraph
+ * Created by Nestor on 11/12/17.
+ * Usado para dividir líneas de un párrafo
  */
 public class LinesSplitter extends Splitter {
 
@@ -45,7 +45,7 @@ public class LinesSplitter extends Splitter {
     @Override
     public List<Mat> split()
     {
-        // get the col limits to the biggest line in the paragraph
+        // obtener los límites de la col a la línea más grande en el párrafo
         Pair<Integer, Integer> startEndCol = MatManipulator.findLeftAndRightBounds(getImg());
 //        Pair<Integer, Integer> startEndCol = this.findStartAndEnd(getColumnsHistogram());
         int startCol = startEndCol.getKey();

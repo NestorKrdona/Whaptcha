@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.logging.Level;
 
 /**
- * Created by sal on 11/11/15.
+ * Created by Zamir on 13/12/17.
  */
 public class WordsSplitter extends Splitter
 {

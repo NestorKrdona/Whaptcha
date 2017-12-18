@@ -14,7 +14,7 @@ import java.util.logging.Level;
 import java.util.stream.Collectors;
 
 /**
- * Created by sal on 11/11/15.
+ * Created by Arlenson on 12/12/17.
  */
 public class LettersSplitter extends Splitter
 {
@@ -47,7 +47,7 @@ public class LettersSplitter extends Splitter
     @Override
     public @NotNull List<Mat> split()
     {
-        // get the row limits to the biggest letter in the word
+        // obtener los límites de la fila a la letra más grande de la palabra
         Pair<Integer, Integer> startEndRow = this.findStartAndEnd(getRowsHistogram());
         int startRow = startEndRow.getKey();
         int endRow = startEndRow.getValue();
@@ -55,15 +55,15 @@ public class LettersSplitter extends Splitter
         if (startRow == -1 || endRow == -1)
         {
             ErrorHandling.log(Level.WARNING,
-                    String.format("wrong values:(%s, %s): %s",
+                    String.format("valores incorrectos:(%s, %s): %s",
                             startRow,
                             endRow,
                             getClass().getName()));
             return new LinkedList<>();
         }
-        // find boundaries of letters using the column histogram
+        // encontrar límites de letras usando el histograma de columna
         List<Pair<Integer, Integer>> boundaries = this.findBoundaries(getColumnsHistogram(), colLimit);
-        // splitting letters and returning it as a new LinkedList
+        // dividir letras y devolverlas como una nueva LinkedList
         return boundaries
                 .stream()
                 .map(p -> getImg().submat(startRow, endRow, p.getKey(), p.getValue()))

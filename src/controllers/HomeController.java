@@ -19,7 +19,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by sal on 11/11/15.
+ * Created by NestorKrdona 13/12/2017
  */
 public class HomeController
 {
@@ -206,10 +206,10 @@ public class HomeController
     private FileChooser addFileChooser()
     {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Open an Image File");
+        fileChooser.setTitle("Abra un archivo de Imagen");
         fileChooser.setInitialDirectory(new File(System.getProperty("user.dir")));
         fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("All images", "*.jpg", "*.png", "*.jp2", ".jpeg", ".pmg")
+                new FileChooser.ExtensionFilter("Todas las Imagenes", "*.jpg", "*.png", "*.jp2", ".jpeg", ".pmg")
         );
         return fileChooser;
     }

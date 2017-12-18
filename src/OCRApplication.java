@@ -1,6 +1,6 @@
 /**
  *
- * @author nes-t
+ * @author NestorKrdona
  */
 
 import javafx.application.Application;
@@ -16,7 +16,7 @@ import org.opencv.core.Core;
 
 public class OCRApplication extends Application
 {
-    private static final String APPLICATION_TITLE = "MyOCR";
+    private static final String APPLICATION_TITLE = "Whaptcha";
 
     /**
      * The function that is call to start the java program

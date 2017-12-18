@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 
 /**
- * Created by sal on 18/11/15.
+ * Created by NestorKrdona 13/12/2017
  */
 public class ClassifyController
 {

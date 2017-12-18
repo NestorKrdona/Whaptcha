@@ -8,7 +8,7 @@ import javafx.scene.control.Slider;
 import javafx.scene.layout.BorderPane;
 
 /**
- * Created by sal on 17/11/15.
+ * Created by Nestor on 13/12/17.
  */
 public class ProcessController
 {
@@ -50,11 +50,13 @@ public class ProcessController
         // configure Buttons
 
         // configure Labels
-        colLimitLabel.setText("columns limit:");
-        rowLimitLabel.setText("rows limit:");
+        colLimitLabel.setText("Limite de Columnas:");
+        rowLimitLabel.setText("Limite de Filas:");
 //        rowLimitLabel.setPrefWidth(colLimitLabel.getPrefWidth());
         colLimitValueLabel.setText(String.valueOf(colLimitSlider.getValue()));
         rowLimitValueLabel.setText(String.valueOf(rowLimitSlider.getValue()));
+        
+        pPDButton.setVisible(false);
     }
 
     public static void configSlider(@NotNull Slider aSlider, double min, double max,

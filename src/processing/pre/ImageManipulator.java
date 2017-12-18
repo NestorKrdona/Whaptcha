@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.logging.Level;
 
 /**
- * Created by sal on 02/11/15.
+ * Created by NestorKrdona 13/12/2017
  */
 public class ImageManipulator
 {
@@ -34,7 +34,7 @@ public class ImageManipulator
      */
     public static Mat applyGaussianBlur(Mat src)
     {
-        assert src != null : "Invalid matrix: null value";
+        assert src != null : "Matriz NO Valida: Valor Nulo";
 
         Mat dest = new Mat();
         Size ksize = new Size(5,5);
@@ -51,7 +51,7 @@ public class ImageManipulator
      */
     public static Mat applyOtsuBinarysation(@NotNull Mat src)
     {
-        assert !src.empty() : "Invalid img passed: empty matrices";
+        assert !src.empty() : "Imagen NO Valida: Matrices Vacias";
 
         Mat dest = new Mat();
         int thresh = 0;
@@ -61,7 +61,7 @@ public class ImageManipulator
     }
 
     /**
-     * Implemented from the given examples of OpenCV, doesn't work on Binarized images
+     * Implementado a partir de los ejemplos dados de OpenCV, no funciona en imágenes binarizadas
      * @param src
      * @return
      */
@@ -103,9 +103,9 @@ public class ImageManipulator
     }
 
     /**
-     * Generates an histogram of black pixels counting the columns occurrences
-     * @param src a binarized image
-     * @return an histogram of the columns as an array of integers
+     * Genera un histograma de píxeles negros contando las ocurrencias de columnas
+     * @param src una imagen binarizada
+     * @return un histograma de las columnas como una matriz de enteros
      */
     public static int[] manualCalculationHistogramColumns(Mat src)
     {
@@ -124,9 +124,9 @@ public class ImageManipulator
     }
 
     /**
-     * Generates an histogram of black pixels counting the rows occurrences
-     * @param src a binarized image
-     * @return an histogram of the rows as an array of integers
+     * Genera un histograma de píxeles negros que cuenta las repeticiones de filas
+     * @param src una imagen binarizada
+     * @return un histograma de las filas como una matriz de enteros
      */
     public static int[] manualCalculationHistogramRows(Mat src)
     {
@@ -135,7 +135,7 @@ public class ImageManipulator
         {
             for (int row = 0; row < src.rows(); row++)
             {
-                if (src.get(row, col)[0] == 0d) // is black
+                if (src.get(row, col)[0] == 0d) // es Negro
                 {
                     hist[row] += 1;
                 }

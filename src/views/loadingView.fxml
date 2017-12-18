@@ -17,8 +17,8 @@
     </center>
     <bottom>
         <HBox>
-            <Button fx:id="saveButton" text="Save"/>
-            <Button fx:id="nextButton" text="Next"/>
+            <Button fx:id="saveButton" text="Guardar"/>
+            <Button fx:id="nextButton" text="Siguiente"/>
         </HBox>
     </bottom>
 </BorderPane>

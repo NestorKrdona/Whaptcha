@@ -8,7 +8,7 @@ import org.opencv.core.Rect;
 import org.opencv.core.Scalar;
 
 /**
- * Created by sal on 15/11/15.
+ * Created by NestorKrdona on 10/12/17.
  */
 public class MatManipulator
 {

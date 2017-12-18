@@ -6,7 +6,7 @@
     <center>
         <VBox alignment="CENTER" spacing="20">
             <HBox alignment="CENTER">
-                <Button fx:id="classifyButton" text="Classify"/>
+                <Button fx:id="classifyButton" text="Clasificar"/>
             </HBox>
             <HBox alignment="CENTER">
                 <Button fx:id="testClassifyButton" text="Test classifier"/>

@@ -10,7 +10,7 @@
 <BorderPane fx:id="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CDSDController">
     <top>
         <HBox alignment="TOP_CENTER">
-            <Label text="Select ratio to slip the directory into training and "/>
+            <Label text="Seleccione el ratio de tamaño de la muestra "/>
             <Slider fx:id="ratioSlider"/>
         </HBox>
     </top>

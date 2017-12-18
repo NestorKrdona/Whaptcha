@@ -7,7 +7,7 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.layout.BorderPane;
 
 /**
- * Created by sal on 15/11/15.
+ * Created by Arlenson on 13/12/17.
  */
 public class LoadingController
 {
